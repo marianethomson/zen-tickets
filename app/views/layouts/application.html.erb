@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zendesk Tickets</title>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Basic|Jura">
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<nav>
+  <h1><strong><a href="/">Zendesk Tickets</a></strong></h1>
+</nav>
+
+<div id="div_box">
+  <div id="box_display">
+    <%= yield %>
+  </div>
+</div>
+<footer><%=link_to image_tag('GitHub-Mark-32px.png'), 'https://github.com/rmit-s3672108-mariane-dinis/zendesk_tickets'%></footer>
+</body>
+</html>
+

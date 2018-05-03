@@ -1,0 +1,126 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+    font-size: 1em;
+    font-family: "Jura", Arial;
+    background-color: #ef762f;
+    background-image: url("https://image.ibb.co/gTyBEH/mosaic_2821062.png");
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    height: 70px;
+    background-color: black;
+    vertical-align: middle;
+    text-align: left;
+
+
+}
+
+nav a {
+    color: #f48342;
+    text-decoration: none;
+    padding-left: 8%;
+    font-family: "Basic", Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: 200;
+    text-autospace: inherit;
+
+}
+
+#div_box {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 1em;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 5px 14px 30px 0px rgba(0,0,0,0.83);
+    -webkit-box-shadow: 5px 14px 30px 0px rgba(0,0,0,0.83);
+    -moz-box-shadow: 5px 14px 30px 0px rgba(0,0,0,0.83);
+    max-width: 80%;
+
+}
+
+#box_display {
+    background-color: #f9e6cf;
+    margin-top: 5%;
+    padding: 3% 8%;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+}
+
+tr {
+    line-height: 1.6em;
+}
+
+#div_box a:link{
+    color: black;
+}
+
+#div_box a:visited{
+    color: #9A031E;
+}
+
+#page {
+    padding-top: 2%;
+    text-align: center;
+}
+
+#page a {
+    text-decoration: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+footer {
+    position: fixed;
+    left: 30px;
+    bottom: 10px;
+}
+
+button {
+    background-color: #ef762f;
+    border: 1px;
+    border-radius: 5px;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    background-color: #EFA24F;
+}
+
+button a:-webkit-any-link{
+    text-decoration: none;
+}

@@ -1,0 +1,15 @@
+<div id="title">
+  <h2><strong><%= @ticket.subject %></strong></h2>
+</div>
+
+<div id="ticket_info">
+  <p><strong>Ticket no.:</strong><%= @ticket.id %></p>
+  <p><strong>Created:</strong> <%= parse_time(@ticket.created_at) %></p>
+  <p><strong>Last Updated:</strong> <%= parse_time(@ticket.updated_at) %></p>
+  <p><strong>Status:</strong> <%= @ticket.status %></p>
+  <p><strong>Description: </strong><%= simple_format @ticket.description %></p>
+  <p><strong>Submitted By:</strong> <%= @ticket.requester_id %></p>
+  <p><strong>Assigned To:</strong> <%= @ticket.assignee_id %></p>
+</div>
+
+<button><%= link_to 'Back', :back %></button>

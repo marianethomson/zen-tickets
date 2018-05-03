@@ -1,0 +1,28 @@
+
+<table>
+  <tr>
+    <th>Subject</th>
+    <th>Created At</th>
+    <th>Status</th>
+  </tr>
+
+  <% @tickets.each do |ticket| %>
+    <tr>
+      <td><a href="/ticket/<%= ticket.id %>"><%= ticket.subject %></a></td>
+      <td><%= parse_time(ticket.created_at) %></td>
+      <td><%= ticket.status %></td>
+    </tr>
+  <% end %>
+</table>
+
+<div id="page">
+  <% if @current_page.to_i - 1 >= 1 %>
+    <a href="/page/<%= @current_page.to_i - 1 %>">&#9664;</a>
+  <% end %>
+
+  <span><strong>Page <%= @current_page %> of <%= @num_of_pages %></strong></span>
+
+  <% if @current_page.to_i < @num_of_pages %>
+    <a href="/page/<%= @current_page.to_i + 1 %>">&#9654;</a>
+  <% end %>
+</div>
